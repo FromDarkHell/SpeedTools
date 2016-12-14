@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // SRL
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "SRL";
+            this.ClientSize = new System.Drawing.Size(394, 303);
+            this.Name = "SRL";
+            this.Text = "SpeedTools - SRL";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
