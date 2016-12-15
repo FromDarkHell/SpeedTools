@@ -180,7 +180,7 @@
             this.Controls.Add(this.Back);
             this.Controls.Add(this.button1);
             this.Name = "Livesplit";
-            this.Text = "Livesplit";
+            this.Text = "SpeedTools - Livesplit";
             this.Load += new System.EventHandler(this.Livesplit_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
