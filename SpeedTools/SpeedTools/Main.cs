@@ -32,5 +32,11 @@ namespace SpeedTools {
             Inf.Closed += (s, args) => this.Close();
             Inf.Show();
         }
+        private void SPLIO_Click(object sender, EventArgs e) {
+            this.Hide();
+            var Inf = new Splits();
+            Inf.Closed += (s, args) => this.Close();
+            Inf.Show();
+        }
     }
 }

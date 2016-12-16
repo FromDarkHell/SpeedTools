@@ -32,6 +32,7 @@
             this.Livesplit = new System.Windows.Forms.Button();
             this.SRL = new System.Windows.Forms.Button();
             this.info = new System.Windows.Forms.Button();
+            this.SPLIO = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // WRF
@@ -66,7 +67,7 @@
             // 
             // info
             // 
-            this.info.Location = new System.Drawing.Point(99, 68);
+            this.info.Location = new System.Drawing.Point(99, 88);
             this.info.Name = "info";
             this.info.Size = new System.Drawing.Size(83, 36);
             this.info.TabIndex = 3;
@@ -74,11 +75,22 @@
             this.info.UseVisualStyleBackColor = true;
             this.info.Click += new System.EventHandler(this.info_Click);
             // 
+            // SPLIO
+            // 
+            this.SPLIO.Location = new System.Drawing.Point(99, 37);
+            this.SPLIO.Name = "SPLIO";
+            this.SPLIO.Size = new System.Drawing.Size(83, 31);
+            this.SPLIO.TabIndex = 4;
+            this.SPLIO.Text = "Splits.IO";
+            this.SPLIO.UseVisualStyleBackColor = true;
+            this.SPLIO.Click += new System.EventHandler(this.SPLIO_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(281, 103);
+            this.ClientSize = new System.Drawing.Size(281, 119);
+            this.Controls.Add(this.SPLIO);
             this.Controls.Add(this.info);
             this.Controls.Add(this.SRL);
             this.Controls.Add(this.Livesplit);
@@ -96,6 +108,7 @@
         private System.Windows.Forms.Button Livesplit;
         private System.Windows.Forms.Button SRL;
         private System.Windows.Forms.Button info;
+        private System.Windows.Forms.Button SPLIO;
     }
 }
 

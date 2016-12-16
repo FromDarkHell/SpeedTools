@@ -1,11 +1,8 @@
 ﻿using System.Windows.Forms;
 using System;
-namespace SpeedTools
-{
-    public partial class SRL : Form
-    {
-        public SRL()
-        {
+namespace SpeedTools {
+    public partial class SRL : Form {
+        public SRL() {
             InitializeComponent();
         }
         private void button1_Click(object sender, System.EventArgs e)
@@ -226,10 +223,15 @@ namespace SpeedTools
                     Clipboard.SetDataObject(url, true);
                 }
             }
-
         private void SRL_Load(object sender, EventArgs e)
         {
             button2.Visible = false;
+        }
+        private void button3_Click(object sender, EventArgs e) {
+            this.Hide();
+            var Inf = new Main();
+            Inf.Closed += (s, args) => this.Close();
+            Inf.Show();
         }
     }
     }
